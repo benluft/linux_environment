@@ -9,7 +9,7 @@ You will need to set up git.  This is not automated, follow the following steps
 
 === Git
 
-1. Install Git
+1. Install Git - this should be as simple as `sudo apt install git`
 
 == Setup
 
