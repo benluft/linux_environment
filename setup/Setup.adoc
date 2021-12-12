@@ -1,0 +1,7 @@
+= Setup
+
+This folder contains several scripts to help out setting stuff up
+
+Firstly, run `python install_all_packages.py`
+
+This will install all packages that have been previously installed
