@@ -1,5 +1,5 @@
-atom
 snap
 emacs
 virtualbox
-
+curl
+gitk

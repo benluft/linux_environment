@@ -6,6 +6,7 @@ class InstallInterface(ABC):
 
     def __init__(self):
         self._file_dir = pathlib.Path(__file__).parent.absolute()
+
     @property
     @abstractmethod
     def packager_name(self):
@@ -37,7 +38,7 @@ class InstallInterface(ABC):
         pass
 
     def install_all_packages(self, fun=False):
-        filenames = self.package_storage_filenames if fun else (self.package_storage_filenames[0])
+        filenames = self.package_storage_filenames if fun else [self.package_storage_filenames[0]]
         report_dict = {}
         for filename in filenames:
             if not filename.exists():

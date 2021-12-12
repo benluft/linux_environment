@@ -1,2 +1,4 @@
-/setup/*.deb
-.idea/**
+/setup/*.deb*
+.idea/
+**/__pycache__/**
+setup/idrive/IDriveForLinux/
