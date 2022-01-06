@@ -1,4 +1,4 @@
 # Test to ensure aliases are working
 alias testecho='echo test'
 # Create a virtual environment
-alias venv='source venv.sh'
+alias venv='source ~/linux_environment/scripts/bash_scripts/venv.sh'
