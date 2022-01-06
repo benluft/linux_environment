@@ -29,6 +29,7 @@ This file may or may not have the following code
 
 Add the code below to the .bashrc file
 
+  # Adding MY alias definitions
   if [ -f ~/linux_environment/scripts/aliases/bash_aliases ]; then
       . ~/linux_environment/scripts/aliases/bash_aliases
   fi
@@ -36,3 +37,22 @@ Add the code below to the .bashrc file
 Save the file and open a new terminal window.  Run the command `testecho`.
 
 This should return `test`
+
+=== Path Variables
+
+Also add this to the .bashrc files
+
+  # Adding other stuff
+  # set PATH so it includes user's private bin if it exists
+  if [ -d "$HOME/bin" ] ; then
+      PATH="$HOME/bin:$PATH"
+  fi
+  # set PATH so it includes user's private bin if it exists
+  echo "BEFORE PATH"
+  if [ -d "$HOME/.local/bin" ] ; then
+      echo "AFTER PATH"
+      PATH="$HOME/.local/bin:$PATH"
+  fi
+
+One day I should make my own bashrc that should just be pointed to by the
+system bashrc, we will see
