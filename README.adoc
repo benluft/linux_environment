@@ -1,13 +1,16 @@
 = Linux environment
 
 This is a repo that I will use to set up and use a Debian machine
-as efficiently as possibly. It consists of several componets
+as efficiently as possibly. It has only been tested on Ubuntu 20.04.3 LTS
+
 
 == Before You Begin
 
 You will need to set up git.  This is not automated, follow the following steps
 
-=== Git
+== Git
+
+*MAKE SURE TO CLONE THIS REPO IN YOUR HOME DIRECTORY (~)*
 
 1. Install Git - this should be as simple as `sudo apt install git`
 2. Clone this repo - try git clone https://github.com/benluft/linux_environment.git
@@ -17,6 +20,6 @@ You will need to set up git.  This is not automated, follow the following steps
 This allows easy reconfiguration of a machine, and provides a method for
 storing new installs
 
-== Python
+== Scripts
 
-Virtual environment stuff, coming soon
+All sorts of helper scripts and such

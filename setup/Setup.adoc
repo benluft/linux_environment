@@ -1,7 +1,38 @@
 = Setup
 
+These steps tell you how to setup for a first time user
+
+== Basic Install
+
 This folder contains several scripts to help out setting stuff up
 
 Firstly, run `python install_all_packages.py`
 
 This will install all packages that have been previously installed
+
+== Idrive
+
+Next go into the idrive folder and run the install_idrive.py file. This file
+will download the scripts you need, follow along with the readme
+
+== Scripts Setup
+
+=== Aliases
+
+There should be a file called .bashrc in your home (~) directory
+
+This file may or may not have the following code
+
+  if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+  fi
+
+Add the code below to the .bashrc file
+
+  if [ -f ~/linux_environment/scripts/aliases/bash_aliases ]; then
+      . ~/linux_environment/scripts/aliases/bash_aliases
+  fi
+
+Save the file and open a new terminal window.  Run the command `testecho`.
+
+This should return `test`

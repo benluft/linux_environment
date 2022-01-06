@@ -1,0 +1,4 @@
+# Test to ensure aliases are working
+alias testecho='echo test'
+# Create a virtual environment
+alias venv='source venv.sh'

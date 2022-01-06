@@ -3,3 +3,4 @@ emacs
 virtualbox
 curl
 gitk
+python3-pip
