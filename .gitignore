@@ -1,5 +1,13 @@
+
+# Useless files created by some installers
 /setup/*.deb*
+
+# Pycharm config files
 .idea/
 **/__pycache__/**
+
+# These files will be created by the install_idrive.py file
 setup/idrive/IDriveForLinux/
+
+# Don't version control emacs backup files
 **~
