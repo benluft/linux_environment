@@ -4,3 +4,8 @@ virtualbox
 curl
 gitk
 python3-pip
+ca-certificates
+gnupg
+lsb-release
+openjdk-8-jre
+php

@@ -2,3 +2,5 @@
 alias testecho='echo test'
 # Create a virtual environment
 alias venv='source ~/linux_environment/scripts/bash_scripts/venv.sh'
+# Install new package and save it
+alias install='python3 ~/linux_environment/setup/install_new_package.py'

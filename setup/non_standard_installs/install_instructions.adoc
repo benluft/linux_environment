@@ -1,0 +1,6 @@
+# Unconventional Installs
+
+These are weird zip or other Installs
+
+1. Docker - run docker.sh
+2. Java - see https://www.java.com/en/download/manual.jsp

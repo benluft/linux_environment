@@ -11,7 +11,7 @@ class APMInstaller(InstallInterface):
         return 'apm'
 
     def _package_specific_install(self, package_name):
-        completed = subprocess.run(f'sudo -u benluft -S apm install {package_name}'.split())
+        completed = subprocess.run(f'sudo -S apm install {package_name}'.split())
         return completed.returncode != 0
 
 
@@ -22,7 +22,7 @@ class APTInstaller(InstallInterface):
         return 'apt'
 
     def _package_specific_install(self, package_name):
-        completed = subprocess.run(f'sudo -u benluft -S apt-get install {package_name}'.split())
+        completed = subprocess.run(f'sudo -S apt-get install {package_name}'.split())
         return completed.returncode != 0
 
 
@@ -35,7 +35,7 @@ class DebInstaller(InstallInterface):
     def _package_specific_install(self, package_name):
         completed_get = subprocess.run(f'wget {package_name}'.split())
         deb_file_name = pathlib.Path(package_name).name
-        completed_install = subprocess.run(f'sudo -u benluft -S dpkg -i {deb_file_name}'.split())
+        completed_install = subprocess.run(f'sudo -S dpkg -i {deb_file_name}'.split())
         # Remove the file if it passed
         if completed_get.returncode == 0 and completed_install.returncode == 0:
             os.remove(deb_file_name)
@@ -49,6 +49,5 @@ class SnapInstaller(InstallInterface):
         return 'snap'
 
     def _package_specific_install(self, package_name):
-        completed_install = subprocess.run(f'sudo -u benluft -S snap install {package_name}'.split())
-        completed_run = subprocess.run(f'sudo -u benluft -S snap install {package_name}'.split())
-        return completed_install.returncode != 0 or completed_run.returncode != 0
+        completed_install = subprocess.run(f'sudo -S snap install {package_name}'.split())
+        return completed_install.returncode != 0
