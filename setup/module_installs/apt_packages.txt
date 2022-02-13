@@ -9,3 +9,7 @@ gnupg
 lsb-release
 openjdk-8-jre
 php
+libapache2-mod-php
+php-cli
+php-mysql
+php-pgsql

@@ -21,7 +21,8 @@ if __name__ == '__main__':
     installer_classes_dict = {'apt': APTInstaller(),
                               'apm': APMInstaller(),
                               'deb': DebInstaller(),
-                              'snap': SnapInstaller()}
+                              'snap': SnapInstaller(),
+                              'run': RunInstaller()}
 
     for installer_type, installer_class in installer_classes_dict.items():
         installer_class.install_all_packages(fun=fun_packages)

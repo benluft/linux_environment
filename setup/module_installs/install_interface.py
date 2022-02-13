@@ -1,3 +1,4 @@
+import os.path
 from abc import ABC, abstractmethod
 import pathlib
 
@@ -21,6 +22,9 @@ class InstallInterface(ABC):
     def add_new_package(self, package_name, fun=False):
         filename = self.package_storage_filenames[1] if fun else self.package_storage_filenames[0]
         in_file = False
+        # Make empty file if it doesn't exist
+        if not os.path.exists(filename):
+            open(filename, 'w').close()
         with open(filename) as f:
             for line in f:
                 if line == package_name:
@@ -29,7 +33,7 @@ class InstallInterface(ABC):
         failure = self._package_specific_install(package_name.strip())
         if not failure and not in_file:
             with open(filename, 'a') as f:
-                f.write(package_name)
+                f.write(package_name + '\n')
         elif failure:
             print(f"Package {package_name} failed install using {self.packager_name}")
 
