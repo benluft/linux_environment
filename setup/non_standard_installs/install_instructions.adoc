@@ -2,5 +2,5 @@
 
 These are weird zip or other Installs
 
-1. Docker - run docker.sh
+1. Docker - run docker.sh - also see https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket
 2. Java - see https://www.java.com/en/download/manual.jsp

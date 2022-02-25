@@ -1,2 +1,3 @@
 https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 https://atom.io/download/deb
+https://www.realvnc.com/download/file/viewer.files/VNC-Viewer-6.21.1109-Linux-x64.deb
