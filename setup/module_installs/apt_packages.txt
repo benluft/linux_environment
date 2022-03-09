@@ -14,3 +14,7 @@ php-cli
 php-mysql
 php-pgsql
 gitlab-runner
+docker-compose
+composer
+php7.4-xml
+phpunit
