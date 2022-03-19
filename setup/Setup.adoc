@@ -38,6 +38,11 @@ Save the file and open a new terminal window.  Run the command `testecho`.
 
 This should return `test`
 
+==== Important aliases
+
+venv - create a virtual environment
+install - used to run installer stuff, can save packages that have been installed
+
 === Path Variables
 
 Also add this to the .bashrc files
@@ -56,3 +61,9 @@ Also add this to the .bashrc files
 
 One day I should make my own bashrc that should just be pointed to by the
 system bashrc, we will see
+
+=== Cron Jobs
+
+Add the following cron job, using the command crontab -e
+
+    0 5 * * * ~/linux_environment/scripts/bash_scripts/sync_installed_packages.sh
