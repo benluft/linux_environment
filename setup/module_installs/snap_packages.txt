@@ -1,2 +1,4 @@
 vlc
 pycharm-community --classic
+eclipse --classic
+phpstorm --classic
