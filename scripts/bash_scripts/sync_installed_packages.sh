@@ -1,8 +1,7 @@
 #!/bin/bash
 
-cd ~/linux_environment/
 if [[ 'git status --porcelain' ]]; then
-   git add -A 
-   git commit -m "Daily update 1"
-   git push origin main > text.txt
+   git -C ~/linux_environment/ add -A 
+   git -C ~/linux_environment/ commit -m "Daily update 1"
+   git -C ~/linux_environment/ push origin main > text.txt
 fi
