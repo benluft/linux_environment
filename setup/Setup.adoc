@@ -64,6 +64,6 @@ system bashrc, we will see
 
 === Cron Jobs
 
-Add the following cron job, using the command crontab -e
+Add the following cron job, using the command crontab -e. This command updates the installed packages once a day if I forgot to do it
 
     0 5 * * * ~/linux_environment/scripts/bash_scripts/sync_installed_packages.sh
