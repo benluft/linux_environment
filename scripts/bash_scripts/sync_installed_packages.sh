@@ -8,9 +8,9 @@ fi
 
 cd ~/linux_environment
 
-if [[ 'git status --porcelain' ]]; then
-   git add -A 
-   git commit -m "Daily update $(date +%F)"
+if [[ 'git status --porcelain ./setup/module_installs/*.txt' ]]; then
+   git add ./setup/module_installs 
+   git commit -m "Daily update module installs $(date +%F)"
    git push
 fi
 

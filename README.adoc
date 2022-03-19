@@ -23,7 +23,3 @@ storing new installs
 == Scripts
 
 All sorts of helper scripts and such
-
-test
-adsf
-df
