@@ -20,3 +20,4 @@ php7.4-xml
 phpunit
 php-xdebug
 postfix
+trash-cli
