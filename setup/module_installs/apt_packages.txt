@@ -21,3 +21,4 @@ phpunit
 php-xdebug
 postfix
 trash-cli
+net-tools
