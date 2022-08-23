@@ -23,3 +23,9 @@ postfix
 trash-cli
 net-tools
 python3-tk
+clang
+cmake
+ninja-build
+pkg-config
+libgtk-3-dev
+liblzma-dev
