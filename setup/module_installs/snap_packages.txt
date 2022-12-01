@@ -3,3 +3,4 @@ pycharm-community --classic
 eclipse --classic
 phpstorm --classic
 flutter --classic
+--classic code
