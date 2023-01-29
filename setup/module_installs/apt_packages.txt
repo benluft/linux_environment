@@ -31,3 +31,5 @@ libgtk-3-dev
 liblzma-dev
 mesa-vulkan-drivers
 openjdk-11-jdk
+graphicsmagick-imagemagick-compat
+nmap
