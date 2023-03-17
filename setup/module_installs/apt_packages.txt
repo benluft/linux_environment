@@ -33,3 +33,4 @@ mesa-vulkan-drivers
 openjdk-11-jdk
 graphicsmagick-imagemagick-compat
 nmap
+p7zip-full
